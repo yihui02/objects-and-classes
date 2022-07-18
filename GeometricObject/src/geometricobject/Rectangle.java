@@ -31,6 +31,10 @@ public class Rectangle extends GeometricObject {
     
     public double getPerimeter() { return width + height + width + height; }
     
+    public String toString() {
+        return "Width: " + width + "\nHeight: " + height + "\nArea: " + getArea() + "\nPerimeter: " + getPerimeter();
+    }
+    
     public void printRectangle() {
         System.out.println(super.toString());
         System.out.println("Width: " + width);
